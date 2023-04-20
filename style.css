@@ -1,0 +1,93 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    " Adiv Cdiv Ddiv Bdiv"
+    "foot foot foot foot";
+}
+
+#MyTitle {
+  grid-area: title;
+  font-size: 43;
+  top: 0;
+  position: relative;
+  text-align: center;
+  background-color: rgb(135, 207, 158);
+}
+
+#Adiv {
+  grid-area: Adiv;
+  background-color: rgb(241, 208, 226);
+  border: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#Bdiv {
+  grid-area: Bdiv;
+  background-color: rgba(173, 232, 125, 0.493);
+  border: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#Cdiv {
+  grid-area: Cdiv;
+  background-color: rgba(231, 148, 66, 0.783);
+  border: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#Ddiv {
+  grid-area: Ddiv;
+  background-color: rgba(136, 193, 193, 0.849);
+  border: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+li {
+  background-color: rgba(246, 241, 178, 0.796);
+  border: 20px;
+  width: 80px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+li:hover {
+  background-color: rgb(217, 154, 154);
+}
+
+ul {
+  list-style-type: none;
+}
+
+#MyFoot {
+  grid-area: foot;
+  font-size: 34;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template-areas:
+      "title title"
+      "Adiv Bdiv"
+      "Cdiv Ddiv"
+      "foot foot";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "title"
+      "Adiv"
+      "Bdiv"
+      "Cdiv"
+      "Ddiv"
+      "foot";
+  }
+}
